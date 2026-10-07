@@ -21,15 +21,18 @@ export default function BusinessCard({ business, headingLevel = "h3" }: Business
         isLive && "transition-shadow duration-300"
       )}
     >
-      <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[24px] bg-brand-deep">
+      <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[24px] bg-white">
         {business.image ? (
-          <Image
-            src={business.image.src}
-            alt={business.image.alt}
-            fill
-            sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
-            className="object-cover"
-          />
+          <div className="absolute inset-x-[10%] inset-y-[18%]">
+            <Image
+              src={business.image.src}
+              alt={business.image.alt}
+              fill
+              sizes="(min-width: 1024px) 320px, (min-width: 768px) 40vw, 80vw"
+              unoptimized
+              className="object-contain"
+            />
+          </div>
         ) : (
           <div className="flex h-full items-center justify-center">
             <span className="text-2xl font-medium tracking-tight text-mist">{business.name}</span>

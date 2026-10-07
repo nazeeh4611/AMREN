@@ -38,7 +38,7 @@ export default function Header() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 border-b bg-sand transition-colors duration-200",
-        scrolled || menuOpen ? "border-line" : "border-warmwhite"
+        scrolled || menuOpen ? "border-line" : "border-sand"
       )}
     >
       <div className="container-amren flex h-[92px] items-center justify-between">

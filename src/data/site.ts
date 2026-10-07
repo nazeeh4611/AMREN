@@ -26,7 +26,7 @@ export const siteConfig = {
   // All site images live in /public/images. Replace a file with the same name to update it.
   images: {
     logo: "/images/logo/amren-ventures-logo.svg",
-    logoWhite: "/images/logo/amren-ventures-logo-white.svg",
+    logoWhite: "/images/logo/amren-ventures-logo-white.webp",
     icon: "/images/logo/amren-ventures-icon.png",
     og: "/images/og/amren-ventures-og.jpg",
     home: "/images/home/amren-ventures-who-we-are.webp",

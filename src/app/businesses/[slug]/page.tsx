@@ -98,14 +98,17 @@ export default async function BusinessPage({ params }: Props) {
             )}
           </div>
           {business.image && (
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl">
-              <Image
-                src={business.image.src}
-                alt={business.image.alt}
-                fill
-                sizes="(min-width: 1024px) 560px, 100vw"
-                className="object-cover"
-              />
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl bg-white">
+              <div className="absolute inset-[12%]">
+                <Image
+                  src={business.image.src}
+                  alt={business.image.alt}
+                  fill
+                  sizes="(min-width: 1024px) 440px, 80vw"
+                  unoptimized
+                  className="object-contain"
+                />
+              </div>
             </div>
           )}
         </div>

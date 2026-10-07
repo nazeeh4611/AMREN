@@ -15,7 +15,7 @@ type PageSeoInput = {
 const ORG_ID = `${siteConfig.url}/#organization`;
 const WEBSITE_ID = `${siteConfig.url}/#website`;
 
-export const absoluteUrl = (path: string) => `${siteConfig.url}${path === "/" ? "" : path}`;
+export const absoluteUrl = (path: string) => `${siteConfig.url}${path}`;
 
 export function buildMetadata({
   title,

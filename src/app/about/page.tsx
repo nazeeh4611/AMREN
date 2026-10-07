@@ -43,14 +43,17 @@ export default function AboutPage() {
 
       <section className="section-pad bg-sand">
         <div className="container-amren grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl">
-            <Image
-              src={siteConfig.images.about}
-              alt="Aerial view of the Dubai coastline near the Burj Al Arab"
-              fill
-              sizes="(min-width: 1024px) 560px, 100vw"
-              className="object-cover"
-            />
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl bg-white">
+            <div className="absolute inset-[12%]">
+              <Image
+                src={siteConfig.images.about}
+                alt="AMREN Ventures logo"
+                fill
+                unoptimized
+                sizes="(min-width: 1024px) 440px, 80vw"
+                className="object-contain"
+              />
+            </div>
           </div>
           <div>
             <SectionLabel>Who We Are</SectionLabel>

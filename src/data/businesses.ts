@@ -43,7 +43,7 @@ export const businesses: Business[] = [
     status: "live",
     image: {
       src: "/images/businesses/amren-digital.webp",
-      alt: "Analytics dashboard used by AMREN Digital to report on digital marketing campaigns in Dubai",
+      alt: "AMREN Digital logo",
     },
     seo: {
       title: "AMREN Digital: Digital Marketing & Web Agency, Dubai & UAE",
@@ -122,7 +122,7 @@ export const businesses: Business[] = [
     status: "live",
     image: {
       src: "/images/businesses/amren-fresh.webp",
-      alt: "Fresh vegetables supplied by AMREN Fresh to food businesses in the UAE",
+      alt: "AMREN Fresh logo",
     },
     seo: {
       title: "AMREN Fresh: Fresh Fruit & Vegetable Supplier in the UAE",
@@ -196,7 +196,7 @@ export const businesses: Business[] = [
     status: "coming-soon",
     image: {
       src: "/images/businesses/amren-store.webp",
-      alt: "AMREN Store, an upcoming e-commerce platform for customers in the UAE",
+      alt: "AMREN Store logo",
     },
   },
 ];

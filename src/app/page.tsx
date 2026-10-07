@@ -77,10 +77,10 @@ export default function HomePage() {
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl">
             <Image
               src={siteConfig.images.home}
-              alt="Aerial view of the UAE coastline"
+              alt="Business professional representing AMREN Ventures"
               fill
               sizes="(min-width: 1024px) 560px, 100vw"
-              className="object-cover"
+              className="object-contain object-bottom"
             />
           </div>
           <div>
