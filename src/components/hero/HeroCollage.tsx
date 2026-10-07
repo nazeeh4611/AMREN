@@ -63,7 +63,7 @@ export default function HeroCollage() {
             >
               <span className="block text-lg font-semibold leading-tight sm:text-2xl">{business.name}</span>
               <span className="mt-1 block text-xs sm:text-sm">{panel.subtitle}</span>
-              <span className="mt-3 flex h-9 w-9 items-center justify-center rounded-full border-2 border-white transition-colors duration-200 group-hover:bg-sand group-hover:text-brand sm:h-10 sm:w-10">
+              <span className="mt-3 flex h-9 w-9 items-center justify-center rounded-full border-2 border-white transition-colors duration-200 group-hover:bg-sand group-hover:text-ink sm:h-10 sm:w-10">
                 <ArrowRight size={16} aria-hidden="true" />
               </span>
             </span>

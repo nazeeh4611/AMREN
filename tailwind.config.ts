@@ -6,29 +6,37 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Panels/feature areas (hero, page headers, footer, primary buttons): beige.
         brand: {
-          DEFAULT: "#48182F",
-          deep: "#3A1226",
-          dark: "#2A0C1B",
+          DEFAULT: "#D4CBC4",
+          deep: "#C9BEB6",
+          dark: "#BCB0A7",
         },
         gold: {
           DEFAULT: "#C5A15B",
-          light: "#D5BB82",
-          dark: "#6A5122",
+          hover: "#D3B06A",
+          // Gold for text on beige panels.
+          light: "#6A5122",
+          // Gold for text on the burgundy page background.
+          dark: "#D9BE85",
         },
-        warmwhite: "#FFFFFF",
-        sand: "#D4CBC4",
-        ivory: "#C8BEB6",
-        cream: "#BFB4AC",
-        charcoal: "#1B1D1F",
-        darktext: "#252525",
-        muted: "#4A4A52",
-        line: "#B9AEA6",
-        "line-strong": "#A89D95",
-        // Solid tones for use on brand (maroon) backgrounds (no transparency).
-        mist: "#E6D6DD",
-        slate: "#B79AA7",
-        "line-dark": "#5C2B42",
+        // Fixed burgundy for text on gold or beige.
+        ink: "#48182F",
+        // Text on beige panels.
+        warmwhite: "#48182F",
+        // Page background, header, cards: burgundy.
+        sand: "#48182F",
+        ivory: "#5C2840",
+        cream: "#6A3149",
+        charcoal: "#F3ECE8",
+        darktext: "#F3ECE8",
+        muted: "#D8C9CF",
+        line: "#6E3A52",
+        "line-strong": "#8A5670",
+        // Secondary text and borders on beige panels.
+        mist: "#5A3446",
+        slate: "#6E4A5B",
+        "line-dark": "#B9AEA6",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],

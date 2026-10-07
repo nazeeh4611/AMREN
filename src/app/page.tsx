@@ -38,7 +38,7 @@ export default function HomePage() {
                 AMREN VENTURES LLC
               </SectionLabel>
               <h1 className="mt-5 text-[3.25rem] font-bold leading-[0.98] tracking-[-0.04em] text-warmwhite sm:text-7xl xl:text-[5.75rem]">
-                Different businesses. <span className="text-gold">One vision.</span>
+                Different businesses. <span className="text-gold-light">One vision.</span>
               </h1>
               <p className="mt-7 max-w-md text-pretty text-lg leading-relaxed text-mist md:text-xl">
                 Building and operating businesses across the United Arab Emirates, from digital

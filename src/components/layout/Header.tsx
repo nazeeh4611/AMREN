@@ -42,7 +42,7 @@ export default function Header() {
       )}
     >
       <div className="container-amren flex h-[92px] items-center justify-between">
-        <Logo />
+        <Logo light />
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
           {primaryNav.map((link) => (

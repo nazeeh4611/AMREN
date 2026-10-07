@@ -29,7 +29,7 @@ export default function Footer() {
     <footer className="bg-brand-deep text-warmwhite">
       <div className="container-amren grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
         <div>
-          <Logo light />
+          <Logo />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-mist">
             {siteConfig.legalName}, registered in {siteConfig.location.street}, {siteConfig.location.city},
             United Arab Emirates.

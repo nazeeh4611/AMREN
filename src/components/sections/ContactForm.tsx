@@ -93,7 +93,7 @@ export default function ContactForm() {
             aria-describedby={errors.name ? "name-error" : undefined}
           />
           {errors.name && (
-            <p id="name-error" className="mt-1.5 text-xs text-red-600">
+            <p id="name-error" className="mt-1.5 text-xs text-red-300">
               {errors.name}
             </p>
           )}
@@ -115,7 +115,7 @@ export default function ContactForm() {
             aria-describedby={errors.email ? "email-error" : undefined}
           />
           {errors.email && (
-            <p id="email-error" className="mt-1.5 text-xs text-red-600">
+            <p id="email-error" className="mt-1.5 text-xs text-red-300">
               {errors.email}
             </p>
           )}
@@ -137,7 +137,7 @@ export default function ContactForm() {
             aria-describedby={errors.phone ? "phone-error" : undefined}
           />
           {errors.phone && (
-            <p id="phone-error" className="mt-1.5 text-xs text-red-600">
+            <p id="phone-error" className="mt-1.5 text-xs text-red-300">
               {errors.phone}
             </p>
           )}
@@ -192,7 +192,7 @@ export default function ContactForm() {
           aria-describedby={errors.message ? "message-error" : undefined}
         />
         {errors.message && (
-          <p id="message-error" className="mt-1.5 text-xs text-red-600">
+          <p id="message-error" className="mt-1.5 text-xs text-red-300">
             {errors.message}
           </p>
         )}
@@ -220,7 +220,7 @@ export default function ContactForm() {
           className="group inline-flex h-14 w-full items-center justify-between gap-6 rounded-full bg-brand pl-7 pr-2 text-base font-medium text-warmwhite transition-colors duration-200 hover:bg-brand-deep disabled:cursor-not-allowed disabled:bg-slate sm:w-auto"
         >
           <span>{status === "submitting" ? "Sending..." : "Send Enquiry"}</span>
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gold text-brand-dark transition-transform duration-200 group-hover:translate-x-0.5">
+          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gold text-ink transition-transform duration-200 group-hover:translate-x-0.5">
             {status === "submitting" ? (
               <Loader2 size={18} className="animate-spin" aria-hidden="true" />
             ) : (
@@ -232,13 +232,13 @@ export default function ContactForm() {
 
       <div id="form-status" role="status" aria-live="polite">
         {status === "success" && (
-          <p className="flex items-center gap-2 text-sm font-medium text-emerald-700">
+          <p className="flex items-center gap-2 text-sm font-medium text-emerald-300">
             <CheckCircle2 size={16} aria-hidden="true" />
             {feedback}
           </p>
         )}
         {status === "error" && (
-          <p className="flex items-center gap-2 text-sm font-medium text-red-600">
+          <p className="flex items-center gap-2 text-sm font-medium text-red-300">
             <AlertCircle size={16} aria-hidden="true" />
             {feedback}
           </p>
