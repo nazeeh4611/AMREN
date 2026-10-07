@@ -1,0 +1,7 @@
+import { jsonLdGraph } from "@/lib/seo";
+
+export default function JsonLd({ nodes }: { nodes: object[] }) {
+  // Escape "<" so content can never close the script tag early.
+  const json = JSON.stringify(jsonLdGraph(...nodes)).replace(/</g, "\\u003c");
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />;
+}
