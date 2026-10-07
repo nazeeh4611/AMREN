@@ -5,7 +5,6 @@ import { principles } from "@/data/company";
 import { siteConfig } from "@/data/site";
 import { Building2, ShieldCheck, TrendingUp, Users } from "lucide-react";
 import JsonLd from "@/components/seo/JsonLd";
-import HeroCollage from "@/components/hero/HeroCollage";
 import Button from "@/components/ui/Button";
 import SectionLabel from "@/components/ui/SectionLabel";
 import BusinessAreas from "@/components/sections/BusinessAreas";
@@ -31,29 +30,28 @@ export default function HomePage() {
 
       {/* Hero */}
       <section className="px-3 pt-[104px] md:px-4">
-        <div className="overflow-hidden rounded-3xl bg-brand md:rounded-[40px]">
-          <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch lg:gap-6">
-            <div className="self-center px-6 pb-4 pt-14 sm:px-10 md:pt-20 lg:py-24 lg:pl-16 xl:pl-[max(4rem,calc((100vw-1280px)/2+2rem))]">
-              <SectionLabel light className="text-base font-semibold tracking-wide">
-                AMREN VENTURES LLC
-              </SectionLabel>
-              <h1 className="mt-5 text-[3.25rem] font-bold leading-[0.98] tracking-[-0.04em] text-warmwhite sm:text-7xl xl:text-[5.75rem]">
-                Different businesses. <span className="text-gold-light">One vision.</span>
-              </h1>
-              <p className="mt-7 max-w-md text-pretty text-lg leading-relaxed text-mist md:text-xl">
-                Building and operating businesses across the United Arab Emirates, from digital
-                solutions to wholesale supply and commerce.
-              </p>
-              <div className="mt-10 flex flex-wrap items-center gap-3">
-                <Button href="/businesses" variant="gold" className="px-7 py-3.5 text-base">
-                  Explore Our Businesses
-                </Button>
-                <Button href="/about" variant="outline-light" showArrow={false} className="px-7 py-3.5 text-base">
-                  Learn About Us
-                </Button>
-              </div>
+        <div className="hero-glow relative overflow-hidden rounded-3xl bg-brand md:rounded-[40px]">
+          <div className="container-amren relative z-10 flex min-h-[calc(100svh-120px)] flex-col items-center justify-center py-20 text-center md:py-28">
+            <SectionLabel light className="text-base font-semibold tracking-[0.2em]">
+              AMREN VENTURES LLC
+            </SectionLabel>
+            <h1 className="mt-6 text-[3.25rem] font-bold leading-[0.98] tracking-[-0.04em] text-warmwhite sm:text-7xl lg:text-[6.5rem]">
+              Different businesses.
+              <br />
+              <span className="text-gold">One vision.</span>
+            </h1>
+            <p className="mt-8 max-w-2xl text-pretty text-lg leading-relaxed text-mist md:text-xl">
+              Building and operating businesses across the United Arab Emirates, from digital
+              solutions to wholesale supply and commerce.
+            </p>
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+              <Button href="/businesses" variant="gold" className="px-7 py-3.5 text-base">
+                Explore Our Businesses
+              </Button>
+              <Button href="/about" variant="outline-light" showArrow={false} className="px-7 py-3.5 text-base">
+                Learn About Us
+              </Button>
             </div>
-            <HeroCollage />
           </div>
         </div>
       </section>

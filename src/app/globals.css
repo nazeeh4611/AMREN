@@ -11,8 +11,8 @@
   --ivory: #c8beb6;
   --cream: #bfb4ac;
   --warm-white: #ffffff;
-  --sand: #48182f;
-  --charcoal: #f3ece8;
+  --sand: #d4cbc4;
+  --charcoal: #1b1d1f;
   --muted: #4a4a52;
   --line: #b9aea6;
 }
@@ -99,4 +99,37 @@ body {
 }
 .faq-item[open] .faq-icon {
   transform: rotate(45deg);
+}
+
+/*
+ * Homepage hero: a diagonal streak of gold dust over a fine grain texture.
+ * ::before = soft light band + grain, ::after = gold specks concentrated in the band.
+ */
+.hero-glow {
+  isolation: isolate;
+}
+.hero-glow::before,
+.hero-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-glow::before {
+  background-image:
+    linear-gradient(
+      155deg,
+      rgba(230, 205, 160, 0) 14%,
+      rgba(230, 205, 160, 0.06) 22%,
+      rgba(238, 214, 172, 0.17) 30%,
+      rgba(230, 205, 160, 0.06) 38%,
+      rgba(230, 205, 160, 0) 48%
+    ),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.92 0 0 0 0 0.84 0 0 0 0 0.72 0.22 0 0 0 -0.08'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+}
+.hero-glow::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.94 0 0 0 0 0.82 0 0 0 0 0.58 11 0 0 0 -7.4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E");
+  -webkit-mask-image: linear-gradient(155deg, rgba(0, 0, 0, 0.05) 8%, rgba(0, 0, 0, 0.4) 20%, #000 30%, rgba(0, 0, 0, 0.45) 40%, rgba(0, 0, 0, 0.05) 52%, rgba(0, 0, 0, 0.05) 100%);
+  mask-image: linear-gradient(155deg, rgba(0, 0, 0, 0.05) 8%, rgba(0, 0, 0, 0.4) 20%, #000 30%, rgba(0, 0, 0, 0.45) 40%, rgba(0, 0, 0, 0.05) 52%, rgba(0, 0, 0, 0.05) 100%);
 }
