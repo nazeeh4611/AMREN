@@ -1,11 +1,13 @@
-import { breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, buildMetadata, webPageJsonLd } from "@/lib/seo";
 import JsonLd from "@/components/seo/JsonLd";
 import PageHero from "@/components/sections/PageHero";
 import LegalContent from "@/components/sections/LegalContent";
 
 export const metadata = buildMetadata({
   title: "Cookie Policy",
-  description: "How AMREN Ventures LLC uses cookies and similar technologies.",
+  description:
+    "How the AMREN Ventures LLC website uses essential and analytics cookies, what they collect, and how you can manage or disable cookies in your browser.",
+  keywords: ["AMREN Ventures cookie policy"],
   path: "/cookie-policy",
 });
 
@@ -17,7 +19,12 @@ const breadcrumbs = [
 export default function CookiePolicyPage() {
   return (
     <>
-      <JsonLd nodes={[breadcrumbJsonLd(breadcrumbs)]} />
+      <JsonLd
+        nodes={[
+          webPageJsonLd({ name: "Cookie Policy", description: "How the AMREN Ventures LLC website uses essential and analytics cookies, what they collect, and how you can manage or disable cookies in your browser.", path: "/cookie-policy" }),
+          breadcrumbJsonLd(breadcrumbs),
+        ]}
+      />
       <PageHero breadcrumbs={breadcrumbs} label="Legal" title="Cookie Policy" />
       <LegalContent
         updated="September 2026"

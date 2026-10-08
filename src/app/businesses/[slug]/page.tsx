@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: Props) {
     title: business.seo.title,
     description: business.seo.description,
     path: `/businesses/${business.slug}`,
+    keywords: business.seo.keywords,
     absoluteTitle: true,
   });
 }

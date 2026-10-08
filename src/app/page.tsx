@@ -12,9 +12,24 @@ import ContactCTA from "@/components/sections/ContactCTA";
 
 const title = "AMREN Ventures | Digital Marketing & Fresh Produce in the UAE";
 const description =
-  "AMREN Ventures LLC is a UAE company operating businesses in digital marketing and web development, and fresh fruit and vegetable supply, serving clients across the UAE.";
+  "AMREN Ventures LLC runs businesses in digital marketing, web development and fresh fruit and vegetable supply for companies in Dubai and across the UAE.";
 
-export const metadata = buildMetadata({ title, description, path: "/", absoluteTitle: true });
+export const metadata = buildMetadata({
+  title,
+  description,
+  path: "/",
+  absoluteTitle: true,
+  keywords: [
+    "UAE business group",
+    "digital marketing agency UAE",
+    "web development UAE",
+    "fresh fruit and vegetable supplier UAE",
+    "wholesale fresh produce UAE",
+    "e-commerce UAE",
+    "Dubai",
+    "Sharjah",
+  ],
+});
 
 const highlights = [
   { icon: Building2, title: "3+", text: "Businesses" },
@@ -36,7 +51,7 @@ export default function HomePage() {
               AMREN VENTURES LLC
             </SectionLabel>
             <h1 className="mt-6 text-[3.25rem] font-bold leading-[0.98] tracking-[-0.04em] text-warmwhite sm:text-7xl lg:text-[6.5rem]">
-              Different businesses.
+              Different businesses.{" "}
               <br />
               <span className="text-gold">One vision.</span>
             </h1>

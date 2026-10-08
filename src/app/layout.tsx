@@ -51,7 +51,11 @@ export const metadata: Metadata = {
   },
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
+    ...(process.env.BING_SITE_VERIFICATION
+      ? { other: { "msvalidate.01": process.env.BING_SITE_VERIFICATION } }
+      : {}),
   },
+  formatDetection: { telephone: true, email: true, address: false },
   icons: {
     icon: siteConfig.images.icon,
     apple: siteConfig.images.icon,

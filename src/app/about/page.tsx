@@ -22,7 +22,12 @@ const companyDetails = [
   { term: "Areas served", value: "All seven emirates of the UAE" },
 ];
 
-export const metadata = buildMetadata({ title, description, path: "/about" });
+export const metadata = buildMetadata({
+  title,
+  description,
+  path: "/about",
+  keywords: ["about AMREN Ventures", "AMREN Ventures LLC Sharjah", "Sharjah Media City", "UAE business group"],
+});
 
 export default function AboutPage() {
   return (

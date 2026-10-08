@@ -1,11 +1,13 @@
-import { breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, buildMetadata, webPageJsonLd } from "@/lib/seo";
 import JsonLd from "@/components/seo/JsonLd";
 import PageHero from "@/components/sections/PageHero";
 import LegalContent from "@/components/sections/LegalContent";
 
 export const metadata = buildMetadata({
   title: "Privacy Policy",
-  description: "How AMREN Ventures LLC collects, uses and protects information.",
+  description:
+    "How AMREN Ventures LLC collects, uses and protects personal information submitted through this website, including contact form enquiries and analytics data.",
+  keywords: ["AMREN Ventures privacy policy"],
   path: "/privacy-policy",
 });
 
@@ -17,7 +19,12 @@ const breadcrumbs = [
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <JsonLd nodes={[breadcrumbJsonLd(breadcrumbs)]} />
+      <JsonLd
+        nodes={[
+          webPageJsonLd({ name: "Privacy Policy", description: "How AMREN Ventures LLC collects, uses and protects personal information submitted through this website, including contact form enquiries and analytics data.", path: "/privacy-policy" }),
+          breadcrumbJsonLd(breadcrumbs),
+        ]}
+      />
       <PageHero breadcrumbs={breadcrumbs} label="Legal" title="Privacy Policy" />
       <LegalContent
         updated="September 2026"

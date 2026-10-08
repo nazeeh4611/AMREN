@@ -7,6 +7,8 @@ type PageSeoInput = {
   description: string;
   path: string;
   image?: string;
+  /** Page-specific keywords; merged with the site-wide brand keywords. */
+  keywords?: string[];
   /** Use the title as-is instead of applying the "| AMREN Ventures" template. */
   absoluteTitle?: boolean;
   noIndex?: boolean;
@@ -22,18 +24,23 @@ export function buildMetadata({
   description,
   path,
   image,
+  keywords = [],
   absoluteTitle = false,
   noIndex = false,
 }: PageSeoInput): Metadata {
   const url = absoluteUrl(path);
 
   const ogImage = image ?? siteConfig.images.og;
-  const images = [{ url: ogImage, width: 1200, height: 630, alt: siteConfig.name }];
+  const images = [{ url: ogImage, width: 1200, height: 630, alt: `${siteConfig.name}: ${siteConfig.slogan}` }];
 
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,
-    alternates: { canonical: url },
+    keywords: [...new Set([...keywords, ...siteConfig.keywords])],
+    alternates: {
+      canonical: url,
+      languages: { "en-AE": url, "x-default": url },
+    },
     openGraph: {
       title,
       description,
@@ -89,6 +96,8 @@ export function organizationJsonLd() {
       height: 512,
     },
     description: siteConfig.description,
+    slogan: siteConfig.slogan,
+    image: `${siteConfig.url}${siteConfig.images.og}`,
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.location.street,

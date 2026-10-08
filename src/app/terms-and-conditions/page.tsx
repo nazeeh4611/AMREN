@@ -1,11 +1,13 @@
-import { breadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, buildMetadata, webPageJsonLd } from "@/lib/seo";
 import JsonLd from "@/components/seo/JsonLd";
 import PageHero from "@/components/sections/PageHero";
 import LegalContent from "@/components/sections/LegalContent";
 
 export const metadata = buildMetadata({
   title: "Terms & Conditions",
-  description: "The terms and conditions governing use of the AMREN Ventures website.",
+  description:
+    "The terms that govern use of the AMREN Ventures LLC website, including intellectual property, external links, liability and governing law in the UAE.",
+  keywords: ["AMREN Ventures terms and conditions"],
   path: "/terms-and-conditions",
 });
 
@@ -17,7 +19,12 @@ const breadcrumbs = [
 export default function TermsPage() {
   return (
     <>
-      <JsonLd nodes={[breadcrumbJsonLd(breadcrumbs)]} />
+      <JsonLd
+        nodes={[
+          webPageJsonLd({ name: "Terms & Conditions", description: "The terms that govern use of the AMREN Ventures LLC website, including intellectual property, external links, liability and governing law in the UAE.", path: "/terms-and-conditions" }),
+          breadcrumbJsonLd(breadcrumbs),
+        ]}
+      />
       <PageHero breadcrumbs={breadcrumbs} label="Legal" title="Terms & Conditions" />
       <LegalContent
         updated="September 2026"

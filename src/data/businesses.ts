@@ -23,6 +23,7 @@ export type Business = {
   seo?: {
     title: string;
     description: string;
+    keywords: string[];
   };
   overview?: string[];
   services?: { title: string; description: string }[];
@@ -49,6 +50,16 @@ export const businesses: Business[] = [
       title: "AMREN Digital: Digital Marketing & Web Agency, Dubai & UAE",
       description:
         "AMREN Digital is a UAE agency for website development, SEO, performance marketing, social media management and branding for businesses across the UAE.",
+      keywords: [
+        "digital marketing agency Dubai",
+        "digital marketing agency UAE",
+        "web development UAE",
+        "website design Dubai",
+        "SEO services UAE",
+        "social media management UAE",
+        "Google Ads agency UAE",
+        "branding agency UAE",
+      ],
     },
     overview: [
       "AMREN Digital works with UAE businesses that need their website and marketing to produce enquiries and sales, not just traffic. Projects are scoped around a clear commercial goal and measured against it.",
@@ -128,6 +139,15 @@ export const businesses: Business[] = [
       title: "AMREN Fresh: Fresh Fruit & Vegetable Supplier in the UAE",
       description:
         "AMREN Fresh supplies fresh fruit, vegetables and ready-to-cook produce to supermarkets, restaurants and food businesses across the UAE. Wholesale & retail.",
+      keywords: [
+        "fresh produce supplier UAE",
+        "fruit and vegetable supplier Dubai",
+        "wholesale vegetables UAE",
+        "fresh fruits supplier UAE",
+        "cut fruit supplier UAE",
+        "ready-to-cook vegetables UAE",
+        "restaurant produce supplier UAE",
+      ],
     },
     overview: [
       "AMREN Fresh is a fresh produce supplier serving food businesses across the UAE. Its focus is dependable quality and consistent supply, so that kitchens and shelves are stocked with produce that meets the same standard on every delivery.",

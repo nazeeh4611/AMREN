@@ -13,7 +13,12 @@ const breadcrumbs = [
   { name: "Our Businesses", path: "/businesses" },
 ];
 
-export const metadata = buildMetadata({ title, description, path: "/businesses" });
+export const metadata = buildMetadata({
+  title,
+  description,
+  path: "/businesses",
+  keywords: ["AMREN businesses", "UAE digital marketing agency", "UAE fresh produce supplier", "e-commerce UAE"],
+});
 
 export default function BusinessesPage() {
   return (

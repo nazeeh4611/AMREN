@@ -5,6 +5,20 @@ export const siteConfig = {
   url: "https://amren.ae",
   description:
     "AMREN Ventures is a UAE company operating AMREN Digital, a digital marketing and web development agency, and AMREN Fresh, a fresh fruit and vegetable supplier serving businesses across the UAE.",
+  slogan: "Different businesses. One vision.",
+  // Core brand and service keywords, merged into every page's keywords.
+  keywords: [
+    "AMREN Ventures",
+    "AMREN Ventures LLC",
+    "AMREN UAE",
+    "AMREN Digital",
+    "AMREN Fresh",
+    "AMREN Store",
+    "UAE company",
+    "Sharjah Media City company",
+    "digital marketing UAE",
+    "fresh produce supplier UAE",
+  ],
   location: {
     street: "Sharjah Media City",
     city: "Sharjah",

@@ -8,13 +8,18 @@ import ContactForm from "@/components/sections/ContactForm";
 
 const title = "Contact Us: Phone, Email & Address";
 const description =
-  "Contact AMREN Ventures (Sharjah Media City, UAE) for digital marketing and web development with AMREN Digital, fresh produce supply with AMREN Fresh, or general enquiries.";
+  "Contact AMREN Ventures in Sharjah Media City, UAE. Call +971 50 587 5088 or email hello@amren.ae for digital marketing, fresh produce or general enquiries.";
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Contact", path: "/contact" },
 ];
 
-export const metadata = buildMetadata({ title, description, path: "/contact" });
+export const metadata = buildMetadata({
+  title,
+  description,
+  path: "/contact",
+  keywords: ["contact AMREN Ventures", "AMREN Ventures phone number", "AMREN Ventures email", "Sharjah Media City"],
+});
 
 export default function ContactPage() {
   const { email, phones } = siteConfig.contact;
