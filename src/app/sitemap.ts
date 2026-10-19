@@ -15,9 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     { path: "/about", images: [siteConfig.images.about] },
     { path: "/contact" },
-    { path: "/privacy-policy" },
-    { path: "/terms-and-conditions" },
-    { path: "/cookie-policy" },
+    // Legal pages stay live and linked from the footer, but are left out of
+    // the sitemap: it lists only the pages we want ranking.
   ];
 
   return routes.map(({ path, images }) => ({

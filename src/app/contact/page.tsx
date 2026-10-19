@@ -1,6 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { breadcrumbJsonLd, buildMetadata, webPageJsonLd } from "@/lib/seo";
 import { siteConfig } from "@/data/site";
+import { liveBusinesses } from "@/data/businesses";
 import JsonLd from "@/components/seo/JsonLd";
 import { telHref } from "@/lib/utils";
 import PageHero from "@/components/sections/PageHero";
@@ -88,6 +89,30 @@ export default function ContactPage() {
                     </span>
                   </address>
                 </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-semibold tracking-tight text-brand">Which team to contact</h2>
+              <p className="mt-3 text-[15px] leading-relaxed text-charcoal">
+                Every enquiry sent here reaches AMREN Ventures and is passed to the right team. You can also contact
+                each business directly:
+              </p>
+              <ul className="mt-5 space-y-4">
+                {liveBusinesses.map((business) => (
+                  <li key={business.id}>
+                    <p className="font-medium text-brand">{business.name}</p>
+                    <p className="mt-1 text-[15px] leading-relaxed text-charcoal">{business.summary}</p>
+                    <a
+                      href={business.href}
+                      target="_blank"
+                      rel="noopener"
+                      className="mt-1 inline-block text-sm text-brand underline underline-offset-4"
+                    >
+                      {new URL(business.href).host}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

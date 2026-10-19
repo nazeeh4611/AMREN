@@ -47,7 +47,7 @@ export const siteConfig = {
     about: "/images/about/amren-ventures-about.webp",
   },
   // Bump when page content changes materially; used for sitemap lastModified.
-  lastUpdated: "2026-10-07",
+  lastUpdated: "2026-10-19",
 };
 
 export type SiteConfig = typeof siteConfig;
