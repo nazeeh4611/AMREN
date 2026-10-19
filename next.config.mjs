@@ -5,6 +5,17 @@ const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  async redirects() {
+    // www served a duplicate copy of the site; keep Google on one host.
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.amren.ae" }],
+        destination: "https://amren.ae/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     // Browsers and crawlers request /favicon.ico by default.
     return [{ source: "/favicon.ico", destination: "/images/logo/amren-ventures-icon.png" }];

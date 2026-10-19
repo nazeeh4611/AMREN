@@ -58,14 +58,25 @@ export default function BusinessCard({ business, headingLevel = "h3" }: Business
         </Heading>
         <p className="mt-3 flex-1 text-[15px] leading-relaxed text-charcoal">{business.summary}</p>
         {isLive && (
-          <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-brand">
-            Learn more
-            <ArrowRight
-              size={16}
-              className="transition-transform duration-200 group-hover:translate-x-0.5"
-              aria-hidden="true"
-            />
-          </span>
+          <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+            <span className="inline-flex items-center gap-2 text-sm font-medium text-brand">
+              Learn more
+              <ArrowRight
+                size={16}
+                className="transition-transform duration-200 group-hover:translate-x-0.5"
+                aria-hidden="true"
+              />
+            </span>
+            {/* Direct link to the business's own site; sits above the card-wide overlay link. */}
+            <a
+              href={business.href}
+              target="_blank"
+              rel="noopener"
+              className="relative z-10 text-sm text-muted underline underline-offset-4 hover:text-brand"
+            >
+              {new URL(business.href).host}
+            </a>
+          </div>
         )}
       </div>
     </article>

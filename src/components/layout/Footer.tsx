@@ -11,9 +11,15 @@ function FooterColumn({ title, links }: { title: string; links: NavLink[] }) {
       <ul className="mt-4 space-y-3">
         {links.map((link) => (
           <li key={link.href}>
-            <Link href={link.href} className="text-sm text-mist hover:text-warmwhite">
-              {link.label}
-            </Link>
+            {link.external ? (
+              <a href={link.href} target="_blank" rel="noopener" className="text-sm text-mist hover:text-warmwhite">
+                {link.label}
+              </a>
+            ) : (
+              <Link href={link.href} className="text-sm text-mist hover:text-warmwhite">
+                {link.label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>
