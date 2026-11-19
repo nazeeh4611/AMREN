@@ -21,9 +21,11 @@ export const footerCompanyLinks: NavLink[] = [
 export const footerBusinessLinks: NavLink[] = [
   { label: "AMREN Digital", href: "/businesses/amren-digital" },
   { label: "AMREN Fresh", href: "/businesses/amren-fresh" },
+  { label: "AMR Wheels", href: "/businesses/amr-wheels" },
   { label: "AMREN Store", href: "/businesses#amren-store" },
   { label: "digital.amren.ae", href: "https://digital.amren.ae/", external: true },
   { label: "fresh.amren.ae", href: "https://fresh.amren.ae/", external: true },
+  { label: "amr.amren.ae", href: "https://amr.amren.ae/", external: true },
 ];
 
 export const footerLegalLinks: NavLink[] = [

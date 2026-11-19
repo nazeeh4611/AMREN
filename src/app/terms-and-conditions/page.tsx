@@ -38,7 +38,7 @@ export default function TermsPage() {
           {
             heading: "Use of This Website",
             body: [
-              "This website is provided by AMREN Ventures LLC to introduce AMREN Digital, AMREN Fresh and AMREN Store. Content is provided for general informational purposes and may be updated from time to time without notice.",
+              "This website is provided by AMREN Ventures LLC to introduce AMREN Digital, AMREN Fresh, AMR Wheels and AMREN Store. Content is provided for general informational purposes and may be updated from time to time without notice.",
             ],
           },
           {
@@ -50,7 +50,7 @@ export default function TermsPage() {
           {
             heading: "External Links",
             body: [
-              "This website links to AMREN Digital, AMREN Fresh and AMREN Store. AMREN Ventures LLC is not responsible for the content or availability of external websites.",
+              "This website links to AMREN Digital, AMREN Fresh, AMR Wheels and AMREN Store. AMREN Ventures LLC is not responsible for the content or availability of external websites.",
             ],
           },
           {

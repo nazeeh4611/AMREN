@@ -10,9 +10,9 @@ import SectionLabel from "@/components/ui/SectionLabel";
 import BusinessAreas from "@/components/sections/BusinessAreas";
 import ContactCTA from "@/components/sections/ContactCTA";
 
-const title = "AMREN Ventures | Digital Marketing & Fresh Produce in the UAE";
+const title = "AMREN Ventures | Digital Marketing, Fresh Produce & Alloy Wheels in the UAE";
 const description =
-  "AMREN Ventures LLC runs businesses in digital marketing, web development and fresh fruit and vegetable supply for companies in Dubai and across the UAE.";
+  "AMREN Ventures LLC runs businesses in digital marketing, web development, fresh produce supply and alloy wheels for customers in Dubai and across the UAE.";
 
 export const metadata = buildMetadata({
   title,
@@ -25,6 +25,7 @@ export const metadata = buildMetadata({
     "web development UAE",
     "fresh fruit and vegetable supplier UAE",
     "wholesale fresh produce UAE",
+    "alloy wheels UAE",
     "e-commerce UAE",
     "Dubai",
     "Sharjah",

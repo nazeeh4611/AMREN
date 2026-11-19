@@ -9,7 +9,7 @@ import ContactForm from "@/components/sections/ContactForm";
 
 const title = "Contact Us: Phone, Email & Address";
 const description =
-  "Contact AMREN Ventures in Sharjah Media City, UAE. Call +971 50 587 5088 or email hello@amren.ae for digital marketing, fresh produce or general enquiries.";
+  "Contact AMREN Ventures in Sharjah Media City, UAE. Call +971 50 587 5088 or email hello@amren.ae for digital marketing, fresh produce, alloy wheels or general enquiries.";
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Contact", path: "/contact" },

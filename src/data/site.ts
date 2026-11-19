@@ -4,7 +4,7 @@ export const siteConfig = {
   shortName: "AMREN",
   url: "https://amren.ae",
   description:
-    "AMREN Ventures is a UAE company operating AMREN Digital, a digital marketing and web development agency, and AMREN Fresh, a fresh fruit and vegetable supplier serving businesses across the UAE.",
+    "AMREN Ventures is a UAE company operating AMREN Digital, a digital marketing and web development agency, AMREN Fresh, a fresh fruit and vegetable supplier, and AMR Wheels, an online alloy wheel store, serving customers across the UAE.",
   slogan: "Different businesses. One vision.",
   // Core brand and service keywords, merged into every page's keywords.
   keywords: [
@@ -13,11 +13,13 @@ export const siteConfig = {
     "AMREN UAE",
     "AMREN Digital",
     "AMREN Fresh",
+    "AMR Wheels",
     "AMREN Store",
     "UAE company",
     "Sharjah Media City company",
     "digital marketing UAE",
     "fresh produce supplier UAE",
+    "alloy wheels UAE",
   ],
   location: {
     street: "Sharjah Media City",
@@ -35,6 +37,7 @@ export const siteConfig = {
   links: {
     digital: "https://digital.amren.ae/",
     fresh: "https://fresh.amren.ae/",
+    wheels: "https://amr.amren.ae/",
     store: "https://store.amren.ae/",
   },
   // All site images live in /public/images. Replace a file with the same name to update it.
@@ -47,7 +50,7 @@ export const siteConfig = {
     about: "/images/about/amren-ventures-about.webp",
   },
   // Bump when page content changes materially; used for sitemap lastModified.
-  lastUpdated: "2026-10-19",
+  lastUpdated: "2026-11-19",
 };
 
 export type SiteConfig = typeof siteConfig;

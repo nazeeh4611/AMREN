@@ -18,7 +18,7 @@ const googleSans = Google_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "AMREN Ventures | Digital Marketing & Fresh Produce in the UAE",
+    default: "AMREN Ventures | Digital Marketing, Fresh Produce & Alloy Wheels in the UAE",
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,

@@ -8,7 +8,7 @@ export type FaqItem = {
 };
 
 export type Business = {
-  id: "digital" | "fresh" | "store";
+  id: "digital" | "fresh" | "wheels" | "store";
   slug: string;
   name: string;
   category: string;
@@ -201,6 +201,90 @@ export const businesses: Business[] = [
         question: "How do I open a supply account?",
         answer:
           "Send an enquiry through the AMREN contact page or visit fresh.amren.ae with your business details and expected volumes.",
+      },
+    ],
+  },
+  {
+    id: "wheels",
+    slug: "amr-wheels",
+    name: "AMR Wheels",
+    category: "Alloy Wheels",
+    summary: "Premium cast, flow-formed and forged alloy wheels with verified fitment and UAE-wide delivery.",
+    description:
+      "AMR Wheels is an online alloy wheel store selling premium cast, flow-formed and forged wheels from leading brands, with fitment verified for each vehicle and insured delivery across all seven emirates.",
+    href: siteConfig.links.wheels,
+    status: "live",
+    image: {
+      src: "/images/businesses/amr-wheels.svg",
+      alt: "AMR Wheels logo",
+    },
+    seo: {
+      title: "AMR Wheels: Premium Alloy Wheels in Dubai & the UAE",
+      description:
+        "AMR Wheels sells premium cast, flow-formed and forged alloy wheels from Vossen, BBS, Method, Fuel and more, with verified vehicle fitment and delivery across the UAE.",
+      keywords: [
+        "alloy wheels UAE",
+        "alloy wheels Dubai",
+        "rims Dubai",
+        "forged wheels UAE",
+        "buy alloy wheels online UAE",
+        "car rims Sharjah",
+        "Vossen wheels UAE",
+        "BBS wheels UAE",
+      ],
+    },
+    overview: [
+      "AMR Wheels helps UAE drivers choose and buy the right alloy wheels for their car. Customers select their make, model, year and trim, and see only the wheels the team has verified to fit, so there is no guessing on bolt pattern, offset or diameter.",
+      "The range covers cast, flow-formed and forged wheels from brands including Vossen, BBS, Method Race Wheels, Fuel Off-Road, KMC, Konig and Forgestar, in sizes from 15 to 22 inches, for sport, luxury, performance and off-road builds.",
+    ],
+    services: [
+      {
+        title: "Premium Alloy Wheels",
+        description: "Cast, flow-formed and forged wheels from brands AMR Wheels stands behind, in sizes from 15\" to 22\".",
+      },
+      {
+        title: "Verified Fitment",
+        description: "Every compatibility listing is checked by the team for the vehicle's bolt pattern, offset and size, never guessed.",
+      },
+      {
+        title: "Shop by Vehicle or Style",
+        description: "Browse by make and model, or by style: sport, luxury, performance, off-road and multi-spoke.",
+      },
+      {
+        title: "Secure Online Payments",
+        description: "Pay by card, Apple Pay or Google Pay through Ziina. Card details are never stored.",
+      },
+      {
+        title: "UAE-Wide Delivery",
+        description: "Fast, insured delivery across all seven emirates, free in Dubai, Sharjah and Ajman on orders over AED 2,000.",
+      },
+    ],
+    audience: [
+      "Car owners upgrading their wheels",
+      "SUV and off-road enthusiasts",
+      "Performance and luxury car drivers",
+      "Garages and workshops across the UAE",
+    ],
+    faqs: [
+      {
+        question: "What does AMR Wheels sell?",
+        answer:
+          "AMR Wheels sells premium cast, flow-formed and forged alloy wheels from brands such as Vossen, BBS, Method Race Wheels, Fuel Off-Road, KMC and Konig.",
+      },
+      {
+        question: "How do I know a wheel will fit my car?",
+        answer:
+          "Select your vehicle's make, model, year and trim on amr.amren.ae to see wheels the team has verified to fit. Wheel specialists are also available on WhatsApp, phone or email.",
+      },
+      {
+        question: "Does AMR Wheels deliver across the UAE?",
+        answer:
+          "Yes. AMR Wheels delivers across all seven emirates, with free delivery in Dubai, Sharjah and Ajman on orders over AED 2,000.",
+      },
+      {
+        question: "Where can I shop the full range?",
+        answer:
+          "Browse and order the full range at amr.amren.ae/shop, or send an enquiry through the AMREN contact page.",
       },
     ],
   },

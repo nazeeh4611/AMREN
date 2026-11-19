@@ -7,9 +7,9 @@ import PageHero from "@/components/sections/PageHero";
 import BusinessAreas from "@/components/sections/BusinessAreas";
 import ContactCTA from "@/components/sections/ContactCTA";
 
-const title = "Our Businesses: AMREN Digital & AMREN Fresh";
+const title = "Our Businesses: AMREN Digital, AMREN Fresh & AMR Wheels";
 const description =
-  "AMREN Digital is a UAE digital marketing and web development agency. AMREN Fresh supplies fresh fruit and vegetables to businesses across the UAE.";
+  "AMREN Digital is a UAE digital marketing and web development agency. AMREN Fresh supplies fresh fruit and vegetables to businesses across the UAE. AMR Wheels sells premium alloy wheels online.";
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Our Businesses", path: "/businesses" },
@@ -19,7 +19,7 @@ export const metadata = buildMetadata({
   title,
   description,
   path: "/businesses",
-  keywords: ["AMREN businesses", "UAE digital marketing agency", "UAE fresh produce supplier", "e-commerce UAE"],
+  keywords: ["AMREN businesses", "UAE digital marketing agency", "UAE fresh produce supplier", "alloy wheels UAE", "e-commerce UAE"],
 });
 
 export default function BusinessesPage() {
@@ -37,7 +37,7 @@ export default function BusinessesPage() {
         breadcrumbs={breadcrumbs}
         label="Our Businesses"
         title="The businesses of AMREN Ventures"
-        description="AMREN Ventures operates two businesses serving UAE companies, with a third in development. Each has its own team, website and customers."
+        description="AMREN Ventures operates three businesses serving UAE customers, with a third in development. Each has its own team, website and customers."
       />
 
       <BusinessAreas showHeader={false} />

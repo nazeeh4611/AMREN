@@ -9,7 +9,7 @@ import SectionLabel from "@/components/ui/SectionLabel";
 
 const title = "About Us: UAE Digital & Fresh Supply Company";
 const description =
-  "AMREN Ventures LLC is a UAE company that operates AMREN Digital and AMREN Fresh. Learn how we work and the businesses we serve across the UAE.";
+  "AMREN Ventures LLC is a UAE company that operates AMREN Digital, AMREN Fresh and AMR Wheels. Learn how we work and the businesses we serve across the UAE.";
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
@@ -18,7 +18,7 @@ const breadcrumbs = [
 const companyDetails = [
   { term: "Registered name", value: siteConfig.legalName },
   { term: "Registered office", value: `${siteConfig.location.street}, ${siteConfig.location.city}, UAE` },
-  { term: "Sectors", value: "Digital services, fresh produce supply, e-commerce" },
+  { term: "Sectors", value: "Digital services, fresh produce supply, alloy wheels, e-commerce" },
   { term: "Areas served", value: "All seven emirates of the UAE" },
 ];
 
@@ -68,8 +68,8 @@ export default function AboutPage() {
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted">
               <p>
                 {siteConfig.legalName} is registered in {siteConfig.location.street}, United Arab
-                Emirates. The company owns and operates businesses in digital services and fresh
-                produce supply, and is developing an e-commerce platform.
+                Emirates. The company owns and operates businesses in digital services, fresh
+                produce supply and alloy wheel retail, and is developing an e-commerce platform.
               </p>
               <p>
                 Rather than offering a long list of loosely connected services, AMREN builds

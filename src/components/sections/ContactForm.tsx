@@ -173,6 +173,7 @@ export default function ContactForm() {
           <option value="general">General enquiry</option>
           <option value="digital">AMREN Digital: website, SEO or marketing</option>
           <option value="fresh">AMREN Fresh: produce supply</option>
+          <option value="wheels">AMR Wheels: alloy wheels</option>
           <option value="store">AMREN Store</option>
         </select>
       </div>

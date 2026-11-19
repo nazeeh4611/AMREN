@@ -58,7 +58,7 @@ export default function PrivacyPolicyPage() {
           {
             heading: "Third-Party Websites",
             body: [
-              "This website links to AMREN Digital, AMREN Fresh and AMREN Store, which may operate under their own privacy practices. We encourage you to review the privacy policy of any site you visit.",
+              "This website links to AMREN Digital, AMREN Fresh, AMR Wheels and AMREN Store, which may operate under their own privacy practices. We encourage you to review the privacy policy of any site you visit.",
             ],
           },
           {

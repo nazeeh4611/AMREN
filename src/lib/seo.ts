@@ -114,6 +114,7 @@ export function organizationJsonLd() {
       "Branding",
       "Fresh produce supply",
       "Fruit and vegetable wholesale",
+      "Alloy wheels",
     ],
     subOrganization: businesses
       .filter((b) => b.status === "live")

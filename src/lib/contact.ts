@@ -3,7 +3,7 @@ export type ContactFormValues = {
   email: string;
   phone: string;
   company: string;
-  service: "digital" | "fresh" | "store" | "general";
+  service: "digital" | "fresh" | "wheels" | "store" | "general";
   message: string;
 };
 
@@ -16,6 +16,7 @@ export const serviceLabels: Record<ContactFormValues["service"], string> = {
   general: "General enquiry",
   digital: "AMREN Digital",
   fresh: "AMREN Fresh",
+  wheels: "AMR Wheels",
   store: "AMREN Store",
 };
 

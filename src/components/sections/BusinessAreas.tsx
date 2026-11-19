@@ -22,12 +22,12 @@ export default function BusinessAreas({ showHeader = true }: BusinessAreasProps)
               </h2>
             </div>
             <p className="text-pretty text-base leading-relaxed text-mist md:justify-self-end md:max-w-md">
-              Two operating businesses and one in development, each focused on a single market.
+              Three operating businesses and one in development, each focused on a single market.
             </p>
           </div>
         )}
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {businesses.map((business) => (
             <BusinessCard key={business.id} business={business} headingLevel={showHeader ? "h3" : "h2"} />
           ))}
